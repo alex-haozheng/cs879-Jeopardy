@@ -4,19 +4,55 @@ Reusable Learning Object for CS 879
 
 forked from [Brian Yu](https://github.com/brianyu28/jeopardy)
 
-## Available Scripts
+### **Step 1: Prerequisites**
 
-In the project directory, you can run:
+- [Node](https://nodejs.org/en/)
+- [NPM](https://www.npmjs.com/)
+- [VSCode](https://code.visualstudio.com/)
+    - Install the appropriate language support for each language used in the project.
 
-### `npm start`
+### **Step 2: Clone the Repository**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Navigate to the desired project directory on your computer.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Clone the repository from [GitHub](https://github.com/alex-haozheng/rlo-jeopardy.git) using the `git clone` command.
 
-## `game.json` specification
+    ```
+    $ git clone https://github.com/alex-haozheng/rlo-jeopardy.git
+    ```
+
+- Navigate to the cloned repository directory.
+
+    ```
+    $ cd rlo-jeopardy
+    ```
+
+### **Step 3: Install Dependencies**
+
+- Check that the terminal is in the correct directory.
+
+    ```
+    $ pwd
+    ```
+    or 
+    ```
+    $ ls
+    ```
+
+- Install the dependencies using the `npm install` command.
+
+    ```
+    $ npm install
+    ```
+
+### **Step 4: Run the Application**
+
+    ```
+    $ npm start
+    ```
+    - This will host the server on `http://localhost:3000/`.
+
+### `game.json` specification
 
 `game.json` must have the following keys.
 
