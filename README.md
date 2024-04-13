@@ -15,10 +15,10 @@ forked from [Brian Yu](https://github.com/brianyu28/jeopardy)
 
 - Navigate to the desired project directory on your computer.
 
-- Clone the repository from [GitHub](https://github.com/alex-haozheng/rlo-jeopardy.git) using the `git clone` command.
+- Clone the repository from [GitHub](https://github.com/alex-haozheng/cs879-Jeopardy.git) using the `git clone` command.
 
     ```
-    $ git clone https://github.com/alex-haozheng/rlo-jeopardy.git
+    $ git clone https://github.com/alex-haozheng/cs879-Jeopardy.git
     ```
 
 - Navigate to the cloned repository directory.
