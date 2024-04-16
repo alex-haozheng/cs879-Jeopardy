@@ -2,40 +2,135 @@
 	"game": {
 	  "single": [
 		{
-		  "category": "Single Category 1",
+		  "category": "Sets",
 		  "clues": [
 			{
 			  "value": 200,
-			  "clue": "This is clue 1.1",
-			  "solution": "This is solution 1.1"
+			  "clue": "Can I change items after inserting them into a set?",
+			  "solution": "No"
 			},
 			{
 			  "value": 400,
-			  "clue": "This is clue 1.2",
-			  "solution": "This is solution 1.2"
+			  "clue": "Can I put things that can be changed, but I won't change?",
+			  "solution": "Not good"
+			},
+			{
+			  "value": 800,
+			  "clue": "{0, 2, 5, 6, 8} U {1, 3, 5, 7}",
+			  "solution": "{0,1,2,3,5,7,8}"
+			},
+      {
+        "value": 1000,
+			  "clue": "{0, 3, 8} / {1, 3, 5, 7}",
+			  "solution": "{0,8}"
+      }
+		  ]
+		},
+		{
+		  "category": "Maps",
+		  "clues": [
+			{
+			  "value": 200,
+			  "clue": "Useful (basic and unique) map methods - what do they do? \n getOrDefault()",
+			  "solution": "given a key returns the associated value or default if not found"
+			},
+			{
+			  "value": 400,
+			  "clue": "Useful (basic and unique) map methods - what do they do? \n put()",
+			  "solution": "given a key and value, insert that key and value into the map, overwrite if exists"
+			},
+			{
+			  "value": 800,
+			  "clue": "Useful (basic and unique) map methods - what do they do? \n keySet()",
+			  "solution": "returns the Set<K> of keys in this map"
+			},
+			{
+			  "value": 1000,
+			  "clue": "Useful (basic and unique) map methods - what do they do? \n containsKey(), containsValue(), get()",
+			  "solution": "if a particular object is in the map's set of keys, by equals \n  if a particular object is in the map \n given a key returns the associated value or null if not found"
 			}
 		  ]
 		},
 		{
-		  "category": "Single Category 2",
+		  "category": "Trees",
 		  "clues": [
 			{
 			  "value": 200,
-			  "clue": "This is clue 2.1",
-			  "solution": "This is solution 2.1"
+			  "clue": "What's the size of this tree? What about the height?",
+			  "solution": "(size = # of nodes = 10, height = max(left, right) = 4)"
 			},
 			{
 			  "value": 400,
-			  "clue": "This is clue 2.2",
-			  "solution": "This is solution 2.2"
+			  "clue": "What's the property of AVL tree?",
+			  "solution": "For a given node, the height of its left subtree and right subtree differ by no more than 1."
+			},
+			{
+			  "value": 800,
+			  "clue": "What's the property of BST?",
+			  "solution": "For every node N, all the data in the left subtree rooted at N has value less than or equal to the value of the data in N, all the data in the right subtree rooted at N has value greater than or equal to the value of the data in N."
+			},
+			{
+			  "value": 1000,
+			  "clue": "Insert 5, 6, 7, 9 to the existing tree below.",
+			  "solution": "insert picture here"
+			}
+		  ]
+		},
+		{
+		  "category": "Heaps and P-Queues",
+		  "clues": [
+			{
+			  "value": 200,
+			  "clue": "What's max-heap and min-heap?",
+			  "solution": "Every node is greater than any of its descendents, children, grandchildren, etc. Every node is smaller than any of its descendents, children, grandchildren, etc."
+			},
+			{
+			  "value": 400,
+			  "clue": "Useful P-Queue methods - what they do? \n add(x), poll()",
+			  "solution": "add item x to the collection of items \n remove item with smallest priority rom the collection of items and report it, sometimes knon as extract-min()"
+			},
+			{
+			  "value": 800,
+			  "clue": "Compare and contrast the time complexity of heap operations such as insertion, deletion, and finding the minimum/maximum element.",
+			  "solution": "The time complexity of heap operations varies: insertion and deletion have O(log n) complexity, while finding the minimum/maximum element has O(1) complexity in a min-heap and O(log n) in a max-heap."
+			},
+			{
+			  "value": 1000,
+			  "clue": "Discuss 3 real-world applications where heaps and priority queues are used extensively.",
+			  "solution": ":)"
+			},
+		  ]
+		},
+		{
+		  "category": "Sorting",
+		  "clues": [
+			{
+			  "value": 200,
+			  "clue": "What's the run time of merge sort and quick sort?",
+			  "solution": "O(nlogn)"
+			},
+			{
+			  "value": 400,
+			  "clue": "What are the steps of performing merge sort?",
+			  "solution": "Divide data into two halves, recursively sort each half, merge two halves to make sorted whole"
+			},
+			{
+			  "value": 800,
+			  "clue": "Given an array of integers, can you ome to the board and perform merge sort to everyone?",
+			  "solution": ":)"
+			},
+			{
+			  "value": 1000,
+			  "clue": "Given an array of integers, can you ome to the board and perform quick sort to everyone?",
+			  "solution": ":)"
 			}
 		  ]
 		}
 	  ],
 	  "final": {
 		"category": "Final Category",
-		"clue": "This is the final jeopardy clue.",
-		"solution": "This is the final jeopardy solution!"
+		"clue": "Suppose you had a hash table which had a backing array of fixed size n = 5. If you inserted each of the following values in the order shown using the compression algorithm described in lecture and resolved collisions using linear probing, what would the contents of the hash table be? The values and their hash codes are listed below (for example, the hash of the value A is 4). \n A:4, B:69, C:71, D:20, E:49",
+		"solution": "0: D, 1: C, 2: null, 3: null, 4: A->B->E"
 	  }
 	}
   }
